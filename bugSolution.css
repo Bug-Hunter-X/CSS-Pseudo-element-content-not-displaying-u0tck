@@ -1,0 +1,26 @@
+/* bugSolution.css */
+
+.container::before {
+  content: "This text is now displayed!";
+  display: block;
+  /* Ensure the pseudo-element is visible */
+  position: relative;
+  /* Required for some content types */
+  /* Add other styles as needed */
+}
+
+.container::after {
+  content: url('image.png'); /*Use a valid image path*/
+  display: block;
+  /*Ensure the pseudo-element is visible */
+  position: relative; 
+  /* Required for image content types */
+  /*Add other styles as needed */
+}
+
+/* Example usage */
+.container {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+}
